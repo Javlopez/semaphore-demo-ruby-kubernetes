@@ -36,6 +36,7 @@ blocks:
             # missing.
             # More on caching: https://docs.semaphoreci.com/article/149-caching
             - cache restore
+            - install bundler:1.17.3
             - bundle install --deployment --path vendor/bundle
             # Store the latest version of dependencies in cache,
             # to be used in next blocks and future workflows:
