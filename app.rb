@@ -6,6 +6,6 @@ class App < Sinatra::Base
   end
 
   get "/says" do
-    "Put this in your pipe & smoke it!2"
+    "Put this in your pipe & smoke it!"
   end
 end
