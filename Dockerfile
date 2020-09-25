@@ -8,6 +8,7 @@ WORKDIR $APP_HOME
 
 ADD Gemfile* $APP_HOME/
 RUN bundle install --without development test
+RUN gem install bundler:1.17.2
 
 ADD . $APP_HOME
 
